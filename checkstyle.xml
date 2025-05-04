@@ -15,6 +15,6 @@
 	<module name="LineLength"/>
 	<module name="FileTabCharacter"/>
 	<module name="RegexpHeader">
-		<property name="headerFile" value="LICENSE.txt"/>
+		<property name="headerFile" value="license.txt"/>
 	</module>
 </module>
