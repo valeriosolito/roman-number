@@ -42,4 +42,10 @@ public class RomanPrinterTest {
         assertEquals("   _____   __  __ \n  / ____| |  \\/  |\n | |      | \\  / |\n | |      | |\\/| |\n | |____  | |  | |\n  \\_____| |_|  |_|\n", RomanPrinter.print(900));
         assertEquals("  __  __ \n |  \\/  |\n | \\  / |\n | |\\/| |\n | |  | |\n |_|  |_|\n", RomanPrinter.print(1000));
      }  
+   @Test
+    public void testIllegalArgumentException() {
+        assertThrows(IllegalArgumentException.class, () -> RomanPrinter.print(0));
+        assertThrows(IllegalArgumentException.class, () -> RomanPrinter.print(1001));
+        assertThrows(IllegalArgumentException.class, () -> RomanPrinter.print(-1));
+    } 
 }
