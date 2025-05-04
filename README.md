@@ -167,4 +167,7 @@ Audit done.
 
 Invece per il code coverage, ho usato il comando mvn clean test e sono andato nella cartella target/site/jacoco/jacoco.xml e mi ha fornito questo
 
+[![Java CI with Maven]https://github.com/valeriosolito/roman-number/actions/workflows/maven.yml/badge.svg]
+
+[![Coverage Status](https://coveralls.io/repos/github/valeriosolito/roman-number/badge.svg?branch=main)](https://coveralls.io/github/valeriosolito/roman-number?branch=main)
 
