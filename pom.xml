@@ -160,7 +160,7 @@
     <configuration>
         <repoToken>${env.COVERALLS_REPO_TOKEN}</repoToken>
         <jacocoReports>
-            <jacocoReport>${target/site}jacoco/jacoco.xml</jacocoReport>
+            <jacocoReport>target/site/jacoco/jacoco.xml</jacocoReport>
         </jacocoReports>
     </configuration>
     </plugin>
