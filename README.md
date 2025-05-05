@@ -1,3 +1,6 @@
+![Build](https://github.com/valeriosolito/roman-number/actions/workflows/maven.yml/badge.svg)
+
+
 ////////////////////////////////////////////////////////////////////
 
 // Valerio Solito 2113178
