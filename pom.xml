@@ -125,10 +125,17 @@
           </execution>
           <execution>
             <id>report</id>
-            <phase>test</phase>
+            <phase>verify</phase>
             <goals>
               <goal>report</goal>
             </goals>
+            <configuration>
+              <outputDirectory>${project.build.directory}/site/jacoco</outputDirectory>
+              <output>file</output>
+              <formats>
+                <format>xml</format>
+              </formats>
+            </configuration>
           </execution>
           <execution>
             <id>check-coverage</id>
@@ -153,6 +160,15 @@
           </execution>
         </executions>
       </plugin>
+     <plugin>
+  <groupId>org.eluder.coveralls</groupId>
+  <artifactId>coveralls-maven-plugin</artifactId>
+  <version>4.3.0</version>
+  <configuration>
+    <repoToken>${env.COVERALLS_REPO_TOKEN}</repoToken>
+    <jacocoReportPath>${project.build.directory}/site/jacoco/jacoco.xml</jacocoReportPath>
+  </configuration>
+</plugin>
    </plugins>
   </build>
 </project>
