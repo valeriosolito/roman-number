@@ -8,6 +8,7 @@
 
 Processo di build:
 Eseguendo il comando Run mvn -B package --file pom.xml contenuto del github action, nel file maven.yml abbiamo
+
 [INFO] Scanning for projects...
 
 [INFO]
