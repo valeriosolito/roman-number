@@ -19,3 +19,7 @@ jobs:
       run: mvn -B package --file pom.xml
     - name: Test with JaCoCo
       run: mvn test jacoco:report
+    - name: Upload to Coveralls
+      run: mvn coveralls:report
+      env:
+        COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
