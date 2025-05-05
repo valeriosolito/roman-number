@@ -178,4 +178,4 @@ Audit done.
 
 ![image](https://github.com/user-attachments/assets/427dee06-15dc-4b6d-a519-bcf3bc68d64c)
 
-![Java CI with Maven](https://github.com/valeriosolito/roman-number/main/.github/workflows/maven.yml)
+![Java CI with Maven](https://github.com/valeriosolito/roman-number/actions/.github/workflows/maven.yml/badge.svg)
