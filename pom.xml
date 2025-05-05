@@ -125,10 +125,17 @@
           </execution>
           <execution>
             <id>report</id>
-            <phase>test</phase>
+            <phase>verify</phase>
             <goals>
               <goal>report</goal>
             </goals>
+            <configuration>
+              <outputDirectory>${project.build.directory}/site/jacoco</outputDirectory>
+              <output>file</output>
+              <formats>
+                <format>xml</format>
+              </formats>
+            </configuration>
           </execution>
           <execution>
             <id>check-coverage</id>
