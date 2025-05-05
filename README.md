@@ -6,8 +6,8 @@
 
 ////////////////////////////////////////////////////////////////////
 
-Processo di build:
-Eseguendo il comando Run mvn -B package --file pom.xml contenuto del github action, nel file maven.yml abbiamo
+# Processo di build:
+## Eseguendo il comando Run mvn -B package --file pom.xml contenuto del github action, nel file maven.yml abbiamo
 
 [INFO] Scanning for projects...
 
@@ -130,7 +130,8 @@ Audit done.
 [INFO] ------------------------------------------------------------------------
 
 
-Poi per l'analisi statica del codice eseguo il comando mvn -B checkstyle:check che mi dà:
+# Analisi statica del codice:
+## eseguo il comando mvn -B checkstyle:check che mi dà:
 
 [INFO] Scanning for projects...
 
@@ -166,6 +167,7 @@ Audit done.
 
 [INFO] ------------------------------------------------------------------------
 
-Invece per il code coverage, ho usato il comando mvn clean test e sono andato nella cartella target/site/jacoco/jacoco.xml e mi ha fornito questo
+# Code coverage:
+## abbiamo usato il comando mvn clean test e sono andato nella cartella target/site/jacoco/jacoco.xml e mi ha fornito questo
 
 ![image](https://github.com/user-attachments/assets/b452b7e2-9696-4746-ad44-1f6c55a76b7f)
