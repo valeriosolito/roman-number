@@ -131,7 +131,7 @@ Audit done.
 
 
 # Analisi statica del codice:
-## eseguo il comando mvn -B checkstyle:check che mi dà:
+## Eseguiamo il comando mvn -B checkstyle:check che dà:
 
 [INFO] Scanning for projects...
 
@@ -168,6 +168,10 @@ Audit done.
 [INFO] ------------------------------------------------------------------------
 
 # Code coverage:
-## abbiamo usato il comando mvn clean test e sono andato nella cartella target/site/jacoco/jacoco.xml e mi ha fornito questo
+## Abbiamo usato il comando mvn clean test e andando nella cartella target/site/jacoco/jacoco.xml abbiamo questo:
 
 ![image](https://github.com/user-attachments/assets/b452b7e2-9696-4746-ad44-1f6c55a76b7f)
+
+### In alternativa facendo mvn -B jacoco:report e poi usando WSL (windows subsistem for linux, per usare il comando grep) nella cartella roman-number posso eseguire il seguente comando grep -oP 'Total.*?<td class="ctr2">.*?</td>' target/site/jacoco/index.html | sed -E 's/.*<td class="ctr2">([^<]+)<\/td>/ Code Coverage: \1/' , che riuscirà ad estrarre dal file html la percentuale trovata e a mostrarla e infatti ci ritorna:
+
+![image](https://github.com/user-attachments/assets/427dee06-15dc-4b6d-a519-bcf3bc68d64c)
