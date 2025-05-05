@@ -178,3 +178,4 @@ Audit done.
 
 ![image](https://github.com/user-attachments/assets/427dee06-15dc-4b6d-a519-bcf3bc68d64c)
 
+`grep -oP 'Total.*?<td class="ctr2">.*?</td>' target/site/jacoco/index.html | sed -E 's/.*<td class="ctr2">([^<]+)<\/td>/ Code Coverage: \1/'`
