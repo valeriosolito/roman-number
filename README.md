@@ -177,3 +177,4 @@ Audit done.
 ### che riuscirà ad estrarre dal file html la percentuale trovata e a mostrarla e infatti ci ritorna:
 
 ![image](https://github.com/user-attachments/assets/427dee06-15dc-4b6d-a519-bcf3bc68d64c)
+
