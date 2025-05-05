@@ -178,6 +178,6 @@ Audit done.
 
 ![image](https://github.com/user-attachments/assets/427dee06-15dc-4b6d-a519-bcf3bc68d64c)
 
-```console
- grep -oP 'Total.*?<td class="ctr2">.*?</td>' target/site/jacoco/index.html | sed -E 's/.*<td class="ctr2">([^<]+)<\/td>/ Code Coverage: \1/'
-```
+curl https://google.com > google-index.html
+curl -O http://10.0.1.201/simple.html # creates a local copy of simple.html
+curl -of http://10.0.1.201/fake.html # grabs the content only if the remote file exists. If we don't use this option, we'd get a standard 404 page as a result.
